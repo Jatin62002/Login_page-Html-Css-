@@ -1,56 +1,56 @@
-*{
+* {
     padding: 0;
     margin: auto;
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
+
+body {
     display: flex;
     justify-content: center;
     background-color: black;
 }
-p{
+
+p {
     height: 0.3rem;
 }
-.new_box{
-    opacity: 0.5;
+
+.new_box {
     margin-top: 4.7rem;
     height: 30rem;
-    width: 30rem;
-    background-image:repeating-radial-gradient(black 30%,rgb(16, 165, 170) 40%);
-    animation: myanim 3s infinite;
-    animation-direction: alternate;
+    width: 40rem;
+    background-image: linear-gradient(180deg,black,cyan,black);
+    animation: myanim 4s infinite;
+    animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
-@keyframes myanim{
-     from{/*height: 34rem; */
-         /* width: 34rem; */
-         border-radius: 15%;
-         /* transform:rotate(0deg); */
+
+@keyframes myanim {
+    from {
+        transform: translateY(-700px);
     }
-    to{
-        /* margin-top:16rem; */
-        /* height: 0;
-        width: 0; */
-        border-radius: 50%;
-        /* transform: rotate(360deg); */
-    }    
+    to {
+        transform: translateY(550px);
+    }
 }
-.box{
+
+.box {
     position: absolute;
     margin-top: 7rem;
     background-color: black;
     border: 2px solid black;
     padding: 1rem;
-    border-radius:10%;
-    box-shadow: 0rem 1rem 4rem white;
+    border-radius: 10%;
+    box-shadow: 0rem 1rem 2rem cyan;
 }
-.nav{
-    color:lightcoral;
+
+.nav {
+    color:darkcyan;
     margin-left: 5.5rem;
     font-size: 2.5rem;
     font-weight: bolder;
 }
-input{
+
+input {
     font-style: italic;
     font-size: 1.3rem;
     border-bottom: 1px solid white;
@@ -58,23 +58,38 @@ input{
     width: 18rem;
     height: 2rem;
 }
-label{
+
+label {
     font-style: italic;
     font-size: 1.2rem;
-    font-weight:lighter;
+    font-weight: lighter;
     color: cyan;
 }
-.login{
-    color:blue;
+.user1:focus~.user2{
+    color: wheat;
+}
+.pin1:focus~.pin2{
+    color: wheat;
+}
+
+.login {
+    color: blanchedalmond;
     font-weight: bold;
-    background-color:cyan;
+    background-color: black;
     margin-left: 3.5rem;
     height: 2.5rem;
     width: 6rem;
     font-size: 1.5rem;
     border-radius: 10%;
+    box-shadow: 0rem 0rem 1rem white;
 }
-.google{
+.login:hover{
+    color:black;
+    background-color: khaki;
+    box-shadow: 0rem 0rem 1rem cyan;
+}
+
+.google {
     border: 0;
     margin-left: 2.5rem;
     height: 2rem;
@@ -83,7 +98,8 @@ label{
     color: aliceblue;
     background-color: red;
 }
-.fb{
+
+.fb {
     font-size: large;
     border: 0;
     margin-left: 2.5rem;
@@ -92,6 +108,7 @@ label{
     color: white;
     background-color: blue;
 }
-a{
-    color:rgb(33, 53, 235);
+
+a {
+    color: rgb(33, 53, 235);
 }
