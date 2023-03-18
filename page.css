@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+p{
+    height: 0.3rem;
+}
+.new_box{
+    opacity: 0.5;
+    margin-top: 4.7rem;
+    height: 30rem;
+    width: 30rem;
+    background-image:repeating-radial-gradient(black 30%,rgb(16, 165, 170) 40%);
+    animation: myanim 3s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes myanim{
+     from{/*height: 34rem; */
+         /* width: 34rem; */
+         border-radius: 15%;
+         /* transform:rotate(0deg); */
+    }
+    to{
+        /* margin-top:16rem; */
+        /* height: 0;
+        width: 0; */
+        border-radius: 50%;
+        /* transform: rotate(360deg); */
+    }    
+}
+.box{
+    position: absolute;
+    margin-top: 7rem;
+    background-color: black;
+    border: 2px solid black;
+    padding: 1rem;
+    border-radius:10%;
+    box-shadow: 0rem 1rem 4rem white;
+}
+.nav{
+    color:lightcoral;
+    margin-left: 5.5rem;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+input{
+    font-style: italic;
+    font-size: 1.3rem;
+    border-bottom: 1px solid white;
+    background-color: wheat;
+    width: 18rem;
+    height: 2rem;
+}
+label{
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight:lighter;
+    color: cyan;
+}
+.login{
+    color:blue;
+    font-weight: bold;
+    background-color:cyan;
+    margin-left: 3.5rem;
+    height: 2.5rem;
+    width: 6rem;
+    font-size: 1.5rem;
+    border-radius: 10%;
+}
+.google{
+    border: 0;
+    margin-left: 2.5rem;
+    height: 2rem;
+    width: 13.5rem;
+    font-size: large;
+    color: aliceblue;
+    background-color: red;
+}
+.fb{
+    font-size: large;
+    border: 0;
+    margin-left: 2.5rem;
+    height: 2rem;
+    width: 13.5rem;
+    color: white;
+    background-color: blue;
+}
+a{
+    color:rgb(33, 53, 235);
+}
